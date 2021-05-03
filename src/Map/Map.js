@@ -15,6 +15,15 @@ const center = { lat: 13.72917, lng: 100.52389 };
 
 const Map = ({ marker, setMarker }) => {
   const classes = useStyles();
+  const IconPic = {
+      red:"/red.png", 
+      orange:"/orange.png" ,
+      green:"/green.png" , 
+      dark_orange:"/dark_orange.png" , 
+      yellow:"/yellow.png" ,
+      dark_red:"dark_red"
+    }
+  
 
   // Load Map
   const { isLoaded, loadError } = useLoadScript({
@@ -49,8 +58,8 @@ const Map = ({ marker, setMarker }) => {
               setSelected(markers);
             }}  
             icon={{
-              url: markers.color === "red" ? '/circle_Red.svg' : markers.color ==="blue" ? '/circle_Blue.svg' :'/circle_Yellow',
-              scaledSize: new window.google.maps.Size(30, 30),
+              url: IconPic[markers.color],
+              scaledSize: new window.google.maps.Size(30, 40),
               origin: new window.google.maps.Point(0, 0),
               anchor: new window.google.maps.Point(15, 15),
             }}

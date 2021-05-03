@@ -14,11 +14,11 @@ const FeatureDetail = ({feature_id , Features_Method}) => {
 
     const point = [
         {id: 1 , lat: 46.3588  , long: 68.5766 , color:'red'},
-        {id: 2 , lat: 78.6888  , long: 92.5766 , color:"blue"},
+        {id: 2 , lat: 78.6888  , long: 92.5766 , color:"green"},
         {id: 3 , lat: 53.3588  , long: 84.5766 , color:'red'},
-        {id: 4 , lat: 69.6888  , long: 93.5766 , color:"blue"},
+        {id: 4 , lat: 69.6888  , long: 93.5766 , color:"yellow"},
         {id: 5 , lat: 56.3588  , long: 85.5766 , color:'red'},
-        {id: 6 , lat: 90.6888  , long: 80.5766 , color:"blue"},
+        {id: 6 , lat: 60.6888  , long: 84.5766 , color:"orange"},
     ]
 
     const handleSubmit = async (e) => {
